@@ -2,6 +2,8 @@ devtools::install_github("ncborcherding/scRepertoire")
 suppressMessages(library(scRepertoire))
 suppressMessages(library(Seurat))
 
+library(scRepertoire)
+
 S1 <- read.csv("E://scRNAseq_PBMC/cellranger_run/D23-3695/outs/filtered_contig_annotations.csv")
 S1$condition <- 'Control'
 S2 <- read.csv("E://scRNAseq_PBMC/cellranger_run/D23-3696/outs/filtered_contig_annotations.csv")
